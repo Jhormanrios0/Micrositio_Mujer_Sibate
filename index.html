@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mujer Sibaté</title>
+  <link rel="stylesheet" href="./SplideSlider/splide.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/nav.css">
+  <script src="./SplideSlider/splide.min.js"></script>
+</head>
+
+<body class="mx-auto">
+
+  <!--Header-->
+  <header class="flex flex-col">
+    <!-- sec gob  -->
+    <section class="bg-gobColor px-6 py-2">
+      <figure class="lg:container mx-auto flex items-center justify-center lg:justify-start">
+        <a href="https://www.gov.co">
+          <img src="./assets/img/logoGov.svg" class="w-32 object-contain" alt="Imagen" />
+        </a>
+      </figure>
+    </section>
+    <!-- sec gob  -->
+    <!-- sec logos and input search -->
+    <section
+      class="lg:container mx-auto  p-6 flex flex-wrap justify-center lg:justify-between items-center gap-y-6 xl:gap-6">
+      <article class="flex gap-6 flex-col lg:flex-row items-center justify-center lg:justify-start">
+        <section class="flex gap-3">
+          <a href="https://petro.presidencia.gov.co" class="w-14">
+            <img src="./assets/img/Escudo_de_Colombia.png" class="w-full h-full object-contain" alt="Imagen" />
+          </a>
+          <a href="/" class="w-14">
+            <img src="./assets/img/logo-alcaldia.png" class="w-full h-full object-contain" alt="Imagen" />
+          </a>
+        </section>
+        <h2 class="text-[14px] font-semibold text-center lg:text-start">
+          Alcaldía Municipal de Carepa - Antioquia
+        </h2>
+      </article>
+
+      <section class="flex flex-col gap-3 w-full lg:w-1/4">
+        <a href="/_layouts/15/Authenticate.aspx"
+          class="headerWeb__aut text-[12px] text-center lg:!text-end hover:underline text-primaryBlue">Administrar
+          Sitio</a>
+        <!-- section input  -->
+        <article class="relative h-auto w-full">
+          <input type="text" placeholder="Buscar....."
+            class="text-[12px] border-2 w-full rounded-md py-2 px-3 outline-none focus:shadow-md transition duration-300" />
+          <button
+            class="bg-primaryColor hover:bg-navColor transition duration-300 rounded-full text-white absolute right-2 top-[0.3rem] cursor-pointer p-1 min-w-7 w-7 h-7 flex justify-center items-center"
+            id="btnSearchTramite">
+            <i class="fas fa-search text-[12px]"></i>
+          </button>
+        </article>
+        <!-- section input  -->
+      </section>
+    </section>
+    <!-- sec logos and input search -->
+
+  </header>
+  <!--Header-->
+  <!-- nav  -->
+  <section class="header bg-gris px-6 w-full border-b-2 border-blueLine top-0 sticky z-50">
+    <nav class="menu lg:container mx-auto">
+      <div class="head p-3 lg:px-0">
+        <div class="logo">
+          <img src="./assets/img/logoAlcaldia.png" alt="logo" />
+        </div>
+        <button type="button" class="close-menu-btn"></button>
+      </div>
+      <ul>
+        <li class=""><a href="#" class="">Inicio</a></li>
+        <li class="">
+          <a href="/Transparencia/Paginas/Transparencia-y-Acceso-a-la-Informacion-Publica.aspx">Transparencia
+            y acceso <br />
+            información pública</a>
+        </li>
+        <li class="dropdown group">
+          <section class=" h-full lg:pr-4 ">
+            <a href="#" class="transition-all duration-300 ">Atención y
+              Servicios <br />
+              a la Ciudadanía</a>
+
+            <i
+              class="fa-solid fa-chevron-down transform group-hover:rotate-180 duration-500 group-hover:text-white"></i>
+          </section>
+
+          <ul class="sub-menu">
+            <li><a accesskey="q" href="/Ciudadanos/Paginas/PQRD.aspx">Peticiones,
+                Quejas, Reclamos y Denuncias</a> </li>
+
+            <li><a href="/Ciudadanos/Paginas/Estado-Tramite.aspx">Estado
+                Tramite</a></li>
+
+            <li><a href="/Ciudadanos/Paginas/Tramites-y-Servicios.aspx">Trámites
+                y Servicios</a> </li>
+
+            <li><a href="/Ciudadanos/Paginas/Pagos-en-Linea.aspx">Pagos
+                en Línea</a> </li>
+
+            <li><a href="/Ciudadanos/Paginas/Servicios-de-Atencion-en-Linea.aspx">Servicio
+                de Atención en Línea</a> </li>
+
+            <li class="dropdown">
+              <a href="#"><span>Trabaja con
+                  nosotros</span></a>
+              <i class="fa-solid fa-chevron-down"></i>
+
+              <ul class="sub-menu sub-menu-right sub-menu-left-mobile">
+                <li><a href="/Ciudadanos/Paginas/Ofertas-Laborales.aspx">Agencia
+                    de Gestión y Colocación de
+                    Empleo</a></li>
+                <li><a href="/Ciudadanos/Paginas/Envie-su-Hoja-de-Vida.aspx?IDRequest=6242">Envíe
+                    su Hoja de Vida</a></li>
+              </ul>
+            </li>
+            <li>
+            <li><a href="/Ciudadanos/Paginas/Notificaciones-a-Terceros.aspx">Notificaciones
+                a Terceros</a></li>
+
+            <li><a href="/Ciudadanos/Paginas/Encuesta.aspx">Encuestas</a>
+            </li>
+
+            <li><a href="/Ciudadanos/Paginas/Mecanismos-de-Participacion-Ciudadana.aspx">Mecanismo
+                de Participación Ciudadana</a></li>
+
+            <li><a href="/Ciudadanos/Paginas/Escribale-al-Alcalde.aspx?IDRequest=6291">Escríbale
+                al Alcalde</a></li>
+
+            <li><a href="/Ciudadanos/PortaldeNinos/Paginas/default.aspx">Portal
+                de Niños</a></li>
+          </ul>
+        </li>
+        <li class="dropdown group">
+          <section class=" h-full lg:pr-4 ">
+            <a href="#" class="transition-all duration-300 ">Participa</a>
+
+            <i
+              class="fa-solid fa-chevron-down transform group-hover:rotate-180 duration-500 group-hover:text-white"></i>
+          </section>
+
+          <ul class="sub-menu">
+            <li><a href="/Conectividad/Paginas/Participacion-en-Linea.aspx">Participación
+                en Línea</a></li>
+            <li><a href="/Ciudadanos/Paginas/Servicios-de-Atencion-en-Linea.aspx">Servicios
+                de Atención en Línea</a></li>
+            <li><a href="/Ciudadanos/Paginas/Encuesta.aspx">Encuestas</a>
+            </li>
+            <li><a href="/Conectividad/Paginas/Instancias-de-Participacion-Ciudadana.aspx">Instancias
+                de Participación<br />
+                Ciudadana</a></li>
+
+            <li><a href="/Conectividad/Paginas/Estadisticas-del-Sitio-Web.aspx">Estadísticas
+                del Sitio Web</a></li>
+          </ul>
+        </li>
+        <li class="dropdown group">
+          <section class="h-full lg:pr-4">
+            <a href="#">Mi municipio</a>
+            <i class="fa-solid fa-chevron-down group-hover:rotate-180 duration-500 group-hover:text-white"></i>
+          </section>
+
+          <ul class="sub-menu">
+            <li><a href="/MiMunicipio/Paginas/Presentacion.aspx">Presentación</a>
+            </li>
+
+            <li><a accesskey="i" href="/MiMunicipio/Paginas/Informacion-del-Municipio.aspx">Información
+                del Municipio</a></li>
+
+            <li><a href="/MiMunicipio/Paginas/Nuestros-Simbolos.aspx">Nuestros
+                Símbolos</a></li>
+
+            <li><a href="/MiMunicipio/Paginas/Pasado-Presente-y-Futuro.aspx">Pasado,
+                Presente y Futuro</a></li>
+
+            <li class="dropdown">
+              <a href="#"><span>Turismo</span></a>
+              <i class="fa-solid fa-chevron-down"></i>
+
+              <ul class="sub-menu sub-menu-left sub-menu-left-mobile">
+                <li><a href="/MiMunicipio/Paginas/Turismo%20Donmatías.aspx">Fiestas
+                    y Celebraciones</a></li>
+
+                <li><a href="/MiMunicipio/Paginas/Como-Llegar-al-Municipio.aspx">Cómo
+                    llegar al Municipio </a></li>
+
+                <li><a href="/MiMunicipio/Paginas/Vias-de-Comunicacion.aspx">Vías
+                    de Comunicación</a></li>
+
+                <li><a href="/MiMunicipio/Paginas/Sitios-de-Interes.aspx">Sitios
+                    de Interés</a></li>
+
+                <li><a href="/MiMunicipio/Paginas/Directorio-Turistico.aspx">Directorio
+                    Turístico</a></li>
+              </ul>
+            </li>
+
+            <li><a href="/MiMunicipio/Paginas/Economia.aspx">Economía</a>
+            </li>
+
+            <li><a href="/MiMunicipio/Paginas/Ecologia.aspx">Ecología</a>
+            </li>
+
+            <li class="dropdown">
+              <a href="#"><span>Galerías</span></a>
+              <i class="fa-solid fa-chevron-down"></i>
+
+              <ul class="sub-menu sub-menu-left sub-menu-left-mobile ">
+                <li><a href="/MiMunicipio/Paginas/Galeria-de-Imagenes.aspx">Galería
+                    de Imágenes</a></li>
+
+                <li><a href="/MiMunicipio/Paginas/Galeria-de-Mapas.aspx">Galería
+                    de Mapas</a></li>
+
+                <li><a href="/MiMunicipio/Paginas/Galeria-de-Videos.aspx">Galería
+                    de Videos</a></li>
+
+                <li><a href="/MiMunicipio/Paginas/Galeria-de-Audios.aspx">Galería
+                    de Audios</a></li>
+              </ul>
+            </li>
+
+            <li><a href="/MiMunicipio/Paginas/Calendario-de-Eventos.aspx">Calendario
+                de Eventos</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown group">
+          <section class="h-full lg:pr-4">
+            <a href="#">Nuestra alcaldía</a>
+            <i class="fa-solid fa-chevron-down group-hover:rotate-180 duration-500 group-hover:text-white"></i>
+          </section>
+
+          <ul class="sub-menu">
+            <li><a href="/NuestraAlcaldia/Paginas/Mision-y-Vision.aspx">Misión
+                Visión</a></li>
+            <li><a href="/NuestraAlcaldia/Paginas/Objetivos-y-Funciones.aspx">Objetivos
+                y Funciones</a></li>
+
+            <li><a href="/NuestraAlcaldia/Paginas/Organigrama.aspx">Organigrama</a>
+            </li>
+
+            <li class="dropdown">
+              <a href="#"><span>Directorios</span></a>
+              <i class="fa-solid fa-chevron-down"></i>
+
+              <ul class="sub-menu sub-menu-left sub-menu-left-mobile">
+                <li><a href="/NuestraAlcaldia/Paginas/Directorio-de-Dependencias.aspx">Directorio
+                    de Dependencias</a></li>
+
+                <li><a href="/NuestraAlcaldia/Paginas/Directorio-de-Entidades-Descentralizadas.aspx">Entidades
+                    Descentralizadas</a></li>
+
+                <li><a href="/NuestraAlcaldia/Paginas/Directorio-de-Agremiaciones.aspx">Directorio
+                    de Agremiaciones</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#"><span>Órganos de Control</span></a>
+              <i class="fa-solid fa-chevron-down"></i>
+
+              <ul class="sub-menu sub-menu-left sub-menu-left-mobile">
+                <li><a href="/NuestraAlcaldia/Paginas/Personeria.aspx">Personería</a>
+                </li>
+
+                <li><a href="/NuestraAlcaldia/Paginas/Contraloria.aspx">Contraloría</a>
+                </li>
+
+                <li><a href="/NuestraAlcaldia/Paginas/Procuraduria.aspx">Procuraduría</a>
+                </li>
+
+                <li><a href="/NuestraAlcaldia/Paginas/Control-Interno.aspx">Control
+                    Interno</a></li>
+              </ul>
+            </li>
+
+            <li><a href="/NuestraAlcaldia/Paginas/Nuestros-Directivos-y-Funcionarios.aspx">Nuestros
+                Directivos y <br />
+                Funcionarios</a></li>
+
+            <li><a accesskey="n" href="/NuestraAlcaldia/Paginas/Sala-de-Prensa.aspx">Sala
+                de prensa</a></li>
+
+            <li><a href="/NuestraAlcaldia/Paginas/Objetivos-de-Desarrollo-Sostenible.aspx">Objetivos
+                de Desarrollo<br />
+                Sostenible</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown group">
+          <section class="h-full lg:pr-4">
+            <a href="#">Proyectos</a>
+            <i class="fa-solid fa-chevron-down group-hover:rotate-180 duration-500 group-hover:text-white"></i>
+          </section>
+
+          <ul class="sub-menu">
+            <li><a href="/Proyectos/Paginas/Proyectos-Vigentes.aspx">Proyectos
+                Vigentes</a></li>
+
+            <li><a href="/Proyectos/Paginas/Portal-Unico-de-Contratacion.aspx">Portal
+                Único de Contratación</a></li>
+          </ul>
+        </li>
+      </ul>
+      </li>
+
+      </ul>
+    </nav>
+    <section class="container py-2 lg:py-0">
+      <div class="header-right">
+        <button type="button" class="open-menu-btn">
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+      </div>
+    </section>
+  </section>
+  <!-- nav  -->
+
+  <!-- *TODO MAIN -->
+  <main class="flex flex-col mx-auto gap-[80px]">
+    <!-- *°Start Slider Home °* -->
+    <article class="container mx-auto md:h-max h-[225px] text-white overflow-hidden md:rounded-xl">
+      <section class="splide slider__home  h-full relative flex justify-center items-end">
+        <section class="splide__track h-full">
+          <!--Slider elements-->
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <a href="#">
+                <img class="w-full h-[500px] object-cover" src="./assets/img/slider-home.png" alt="Imagen 1" />
+              </a>
+            </li>
+            <li class="splide__slide">
+              <a href="#">
+                <img class="w-full h-[500px] object-cover" src="./assets/img/slider-home.png" alt="Imagen 1" />
+              </a>
+            </li>
+            <li class="splide__slide">
+              <a href="#">
+                <img class="w-full h-[500px] object-cover" src="./assets/img/slider-home.png" alt="Imagen 1" />
+              </a>
+            </li>
+
+
+          </ul>
+          <!--Slider elements-->
+        </section>
+        <!--Slider controls-->
+        <article
+          class="absolute flex items-center justify-center p-[10px] h-max w-max rounded-full bg-black backdrop-blur-sm bg-opacity-20 lg:mb-[20px] mb-[-15px] xl:gap-[60px] gap-[10px] splide__arrows splide__arrows--ltr transform scale-[0.5] lg:scale-90">
+
+          <article class="order-2 flex gap-[10px]">
+            <button
+              class="splide__toggle !bottom-auto text-white text-[25px] items-center font-bold border-[1px] h-[50px] w-[50px] rounded-full"
+              type="button" aria-label="button">
+              <span class="splide__toggle__play ">
+                <i class="fa-solid fa-play"></i>
+              </span>
+              <span class="splide__toggle__pause">
+                <i class="fa-solid fa-pause"></i>
+              </span>
+            </button>
+            <ul class="splide__pagination relative !bottom-auto z-0 border-[1px] p-[10px] rounded-full ">
+            </ul>
+          </article>
+
+
+        </article>
+        <!--Slider controls-->
+      </section>
+    </article>
+    <!-- *°End Slider Home °* -->
+
+
+    <!-- *°Imagen Quemada °* -->
+    <section class="container mx-auto bg-secundaryColor">
+      <section class="flex flex-wrap gap-[40px] h-[344px] bg-primaryColor max-w-6xl m-8 mx-auto relative items-center">
+        <figure class="relative -top-[110px] left-[40px]">
+          <img src="./assets/img/pngmujer.png" alt="">
+        </figure>
+        <section class="text-white flex flex-col gap-[10px] items-start  relative -top-[60px]">
+          <h3 class="text-[50px]">Aprende, <br>Empodérate <br> y Actúa:</h3>
+          <span class="text-[30px]">Educación para la Igualdad</span>
+        </section>
+      </section>
+    </section>
+    <!-- *°Imagen Quemada °* -->
+
+
+    <!-- !SEPARADOR -->
+    <div class="h-[200px]">
+
+    </div>
+
+    <!-- !SEPARADOR -->
+
+
+  </main>
+  <!-- *TODO MAIN -->
+
+  <!--!! footer  -->
+  <footer class="flex flex-col">
+    <!--!! sec info  -->
+    <section class="bg-primaryColor px-6 flex flex-col gap-6">
+      <!--!! info alcaldia  -->
+      <article
+        class="lg:container mx-auto bg-white border rounded-md transform translate-y-[-30px] lg:translate-y-[-2rem] px-10 py-10 lg:py-20 shadow-md grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-6 w-full lg:w-[90%]">
+        <!--!! sec 1 información alcaldía -->
+        <div class="col-span-1 lg:col-span-2 flex flex-col gap-2 order-2 lg:order-1">
+          <!--!! titulo  -->
+          <h2 class="text-primaryColor font-semibold text-xl">
+            Alcaldía Municipal de Tualcaldia, Departamento
+          </h2>
+          <!--!! información  -->
+          <article class="flex flex-col gap-1 text-[0.9rem]">
+            <span class="font-bold text-blue-800 text-lg py-4">Sede Principal</span>
+            <p class="font-normal">
+              Dirección: Cra. 10 #9-74, Tualcaldia - Departamento, Colombia.
+            </p>
+            <p class="font-normal">Código Postal: 764001</p>
+            <p class="font-normal">
+              Horario: Lunes a viernes de 8:00 a.m. a 12 m. y de 2:00 p.m. a
+              6:00 p.m.
+            </p>
+            <p class="font-normal">Teléfono conmutador: (+57) 2 519 0969</p>
+            <p class="font-normal">
+              Correo institucional:
+              <a href="mailto:contactenos@Tualcaldia.gov.co"
+                class="underline font-semibold text-primaryColor inline-block w-full overflow-x-hidden">contactenos@Tualcaldia.gov.co</a>
+            </p>
+            <p class="font-normal">
+              Correo de Notificaciones Judiciales:
+              <a href="mailto:notificacionjudicial@Tualcaldia.gov.co"
+                class="underline inline-block w-full overflow-x-hidden text-blueTitle font-semibold">
+                notificacionjudicial@Tualcaldia.gov.co</a>
+            </p>
+          </article>
+        </div>
+
+        <!--!! sec 2 logos alcaldia  -->
+        <div class="col-span-1 flex gap-3 justify-center order-1 lg:order-2">
+          <img src="./assets/img/Escudo_de_Colombia.png" alt="Escudo de la república de Colombia"
+            class="w-14 h-14 lg:w-[5rem] lg:h-[5rem] object-contain" />
+          <img src="./assets/img/logo-alcaldia.png" alt="Escudo del municipio de Alcaldía de Tualcaldia"
+            class="w-14 h-14 lg:w-[5rem] lg:h-[5rem] object-contain" />
+        </div>
+        <!--!! sec 3 redes alcaldia -->
+        <div class="col-span-1 lg:col-span-3 order-3 flex flex-wrap gap-6 lg:gap-12">
+          <div class="flex gap-3 items-center">
+            <span class="bg-primaryColor text-white rounded-full flex justify-center items-center p-2 lg:p-4 text-lg">
+              <i class="fab fa-facebook facebook-icon  "></i></span>
+
+          </div>
+          <div class="flex gap-3 items-center">
+            <span class="bg-primaryColor text-white rounded-full flex justify-center items-center p-2 lg:p-4 text-lg">
+              <i class="fab fa-instagram facebook-icon "></i></span>
+
+          </div>
+          <div class="flex gap-3 items-center">
+            <span class="bg-primaryColor text-white rounded-full flex justify-center items-center p-2 lg:p-4 text-lg">
+              <i class="fab fa-twitter facebook-icon "></i></span>
+
+          </div>
+          <div class="flex gap-3 items-center">
+            <span class="bg-primaryColor text-white rounded-full flex justify-center items-center p-2 lg:p-4 text-lg">
+              <i class="fab fa-youtube facebook-icon "></i></span>
+
+          </div>
+        </div>
+
+        <!--!! sec 4 metricas sitio -->
+        <div class="col-span-1 lg:col-span-3 order-4 flex flex-wrap gap-6">
+          <h3 class="font-semibold text-[14px]">
+            Última Actualización:
+            <span id="lblDateSystem" class="font-normal"></span>
+          </h3>
+        </div>
+        <!--!!sec 5 secciones de sitio  -->
+        <div class="col-span-1 lg:col-span-3 order-5 flex flex-wrap gap-6 lg:gap-10">
+          <a href="#" class="underline text-blue-800  text-[1rem]">Políticas</a>
+          <a href="#" class="underline text-blue-800  text-[1rem]">Mapas del sitio</a>
+          <a href="#" class="underline text-blue-800  text-[1rem]">Términos y condiciones</a>
+          <a href="#" class="underline text-blue-800 text-[1rem]">Accesibilidad</a>
+        </div>
+      </article>
+      <!--!! info 1cero1 -->
+      <section class="flex flex-col mx-auto gap-5">
+        <span class="text-white">© 2024 Entidad. Todos los derechos reservados.</span>
+        <article class="flex justify-center gap-3 pb-10 my-auto">
+          <h3 class="text-white flex text-center justify-center my-auto">Desarrollado por:</h3>
+          <img src="./assets/img/logo_101_software_white.png" class="w-[150px]" alt="" />
+        </article>
+      </section>
+    </section>
+
+    <!--!! sec gob  -->
+    <section class="bg-gobColor px-6">
+      <article class="lg:container mx-auto flex justify-center lg:justify-start py-3 gap-3">
+        <img src="./assets/img/logofooter.png" class="w-[3rem]" alt="" />
+        <div class="h-auto w-[1px] bg-white"></div>
+        <img src="./assets/img/logoGov.svg" class="w-[8rem]" alt="" />
+      </article>
+    </section>
+  </footer>
+
+  <!--!! footer  -->
+
+  <script src="./assets/js/main.js" defer></script>
+  <script src="./assets/js/tailwind.js"></script>
+  <script src="./assets/js/tailwindConfig.js"></script>
+</body>
+
+</html>

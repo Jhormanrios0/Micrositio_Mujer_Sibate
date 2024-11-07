@@ -1,0 +1,42 @@
+.clamp-text-personalizado {
+  display: -webkit-box; /* Soporte para WebKit */
+  -webkit-line-clamp: 7; /* Mostrar 15 líneas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  /* Respaldo para Firefox */
+  display: block;
+  max-height: calc(1.5em * 15); /* Ajusta según el alto de línea */
+  line-height: 1.5em; /* Ajuste del espaciado entre líneas */
+}
+.splide__arrow {
+  z-index: 10;
+}
+
+.splide__arrow--prev {
+  left: -40px; 
+}
+
+.splide__arrow--next {
+  right: -15px; 
+}
+
+.splide__pagination--custom {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem; 
+}
+
+.splide__pagination--custom .splide__pagination__page {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.splide__pagination--custom .splide__pagination__page.is-active {
+  background-color: #333;
+}
+
