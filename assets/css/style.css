@@ -15,18 +15,18 @@
 }
 
 .splide__arrow--prev {
-  left: -40px; 
+  left: -40px;
 }
 
 .splide__arrow--next {
-  right: -15px; 
+  right: -15px;
 }
 
 .splide__pagination--custom {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
-  margin-top: 1rem; 
+  margin-top: 1rem;
 }
 
 .splide__pagination--custom .splide__pagination__page {
@@ -40,3 +40,7 @@
   background-color: #333;
 }
 
+/* Estilo para centrar el modal y oscurecer el fondo */
+#date-modal {
+  display: none;
+}
