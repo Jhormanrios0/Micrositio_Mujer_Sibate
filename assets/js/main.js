@@ -26,6 +26,38 @@ var splideImageSlider = new Splide("#image-slider", {
 });
 splideImageSlider.mount();
 
+
+var splideEventSlider = new Splide("#event-slider", {
+  classes: {
+    arrows:
+      "splide__arrows absolute inset-0 flex items-center justify-between px-4",
+    arrow: "bg-primaryColor text-white rounded-full p-2",
+    prev: "splide__arrow--prev",
+    next: "splide__arrow--next",
+  },
+  rewind: true,
+  loop: true,
+  autoplay: true,
+  interval: 3000,
+  arrows: true,
+});
+splideEventSlider.mount();
+
+var splideNextEventSlider = new Splide("#next-event-slider", {
+  classes: {
+    arrows: "splide__arrows absolute inset-0 flex items-center justify-between px-[20px]",
+    arrow: "bg-primaryColor text-white rounded-full p-2",
+    prev: "splide__arrow--prev",
+    next: "splide__arrow--next",
+  },
+  rewind: true,
+  loop: true,
+  autoplay: true,
+  interval: 3000,
+  arrows: true,
+});
+splideNextEventSlider.mount();
+
 // Obtener elementos
 const datePicker = document.getElementById("date-picker");
 const dateModal = document.getElementById("date-modal");

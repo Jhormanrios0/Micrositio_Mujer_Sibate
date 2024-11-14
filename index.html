@@ -40,7 +40,7 @@
           </a>
         </section>
         <h2 class="text-[14px] font-semibold text-center lg:text-start">
-          Alcaldía Municipal de Carepa - Antioquia
+          Alcaldía Municipal de Sibaté - Antioquia
         </h2>
       </article>
 
@@ -384,13 +384,18 @@
     <section class="container mx-auto bg-secundaryColor">
       <!-- *°Imagen Quemada °* -->
 
-      <section class="flex flex-wrap gap-[30px] h-[344px] bg-primaryColor max-w-6xl m-8 mx-auto relative items-center">
-        <figure class="relative -top-[110px] left-[40px]">
-          <img src="./assets/img/pngmujer.png" alt="">
+      <section class="flex lg:h-[344px] h-[200px] bg-primaryColor max-w-6xl m-8 mx-auto relative ">
+        <!-- ° Imagen ° -->
+        <figure class="absolute bottom-0">
+          <img class="lg:h-[450px] h-[250px]" src="./assets/img/pngmujer.png" alt="">
         </figure>
-        <section class="text-white flex flex-col gap-[10px] items-start  relative -top-[60px]">
-          <h3 class="text-[50px]">Aprende, <br>Empodérate <br> y Actúa:</h3>
-          <span class="text-[30px]">Educación para la Igualdad</span>
+        <!-- ° Descripcion ° -->
+        <section
+          class="text-white flex flex-col w-full gap-[10px] pl-[120px] items-end xl:items-center text-start justify-center">
+          <div class="pr-[10px]">
+            <h3 class="lg:text-[50px]">Aprende, <br>Empodérate <br> y Actúa:</h3>
+            <span class="lg:text-[30px]">Educación para la Igualdad</span>
+          </div>
         </section>
       </section>
       <!-- *°Imagen Quemada °* -->
@@ -511,69 +516,181 @@
       <section class=" flex flex-col gap-[10px] px-[40px]">
         <h4 class="text-2xl font-bold text-primaryColor">HOY JUEVES 24</h4>
         <!--! Cards de Sliders -->
-        <article class="flex items-center border-[2px] border-black rounded-xl shadow-md p-[10px] gap-[30px]">
-          <!-- Imagen Evento -->
-          <figure class="w-[40%] h-[300px]">
-            <img class="w-full h-full object-cover rounded-lg" src="./assets/img/SliderEventos.png" alt="Evento de Hoy">
-          </figure>
-          <!-- Detalles Evento -->
-          <section class="flex flex-col w-2/4 gap-[10px] items-start py-4">
-            <!-- Titulo -->
-            <h5 class="text-xl font-semibold text-primaryColor text-start">Lorem Ipsum es simplemente el texto de
-              relleno de las imprentas y archivos de texto.</h5>
-            <!-- Detalles -->
-            <section class="flex flex-col text-start gap-[8px]">
-              <!-- FECHA -->
-              <span class="flex items-center gap-[15px]"><i
-                  class="fa-regular fa-calendar text-[23px] text-primaryColor"></i>Sábado 26 / Octubre 2024</span>
-              <!-- HORA -->
-              <span class="flex items-center gap-[15px]"><i
-                  class="fa-regular fa-clock text-[23px] text-primaryColor"></i>14:00 h</span>
-              <!-- DIRECCIÓN -->
-              <span class="flex items-center gap-[15px]"><i
-                  class="fa-solid fa-location-dot text-[23px] text-primaryColor"></i>Carrera 63A 34-36</span>
-            </section>
-            <!-- Botón -->
-            <a class="inline-block px-[25px] py-2 bg-primaryColor text-white rounded-full mt-4" href="#">Más
-              información</a>
-          </section>
-        </article>
-      </section>
+        <div id="event-slider" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <article
+                  class="flex flex-col md:flex-row items-center border-[2px] border-black rounded-xl shadow-md p-[10px] gap-[30px]">
+                  <!-- Imagen Evento -->
+                  <figure class="w-full md:w-[40%] h-[300px]">
+                    <img class="w-full h-full object-cover rounded-lg" src="./assets/img/SliderEventos.png"
+                      alt="Evento de Hoy">
+                  </figure>
+                  <!-- Detalles Evento -->
+                  <section class="flex flex-col w-full md:w-2/4 gap-[10px] items-start py-4">
+                    <!-- Titulo -->
+                    <h5 class="text-xl font-semibold text-primaryColor text-start">Lorem Ipsum es simplemente el texto
+                      de relleno de las imprentas y archivos de texto.</h5>
+                    <!-- Detalles -->
+                    <section class="flex flex-col text-start gap-[8px]">
+                      <!-- FECHA -->
+                      <span class="flex items-center gap-[15px]"><i
+                          class="fa-regular fa-calendar text-[23px] text-primaryColor"></i>Sábado 26 / Octubre
+                        2024</span>
+                      <!-- HORA -->
+                      <span class="flex items-center gap-[15px]"><i
+                          class="fa-regular fa-clock text-[23px] text-primaryColor"></i>14:00 h</span>
+                      <!-- DIRECCIÓN -->
+                      <span class="flex items-center gap-[15px]"><i
+                          class="fa-solid fa-location-dot text-[23px] text-primaryColor"></i>Carrera 63A 34-36</span>
+                    </section>
+                    <!-- Botón -->
+                    <a class="inline-block px-[25px] py-2 bg-primaryColor text-white rounded-full mt-4" href="#">Más
+                      información</a>
+                  </section>
+                </article>
+              </li>
+              <li class="splide__slide">
+                <article
+                  class="flex flex-col md:flex-row items-center border-[2px] border-black rounded-xl shadow-md p-[10px] gap-[30px]">
+                  <!-- Imagen Evento -->
+                  <figure class="w-full md:w-[40%] h-[300px]">
+                    <img class="w-full h-full object-cover rounded-lg" src="./assets/img/SliderEventos.png"
+                      alt="Evento de Hoy">
+                  </figure>
+                  <!-- Detalles Evento -->
+                  <section class="flex flex-col w-full md:w-2/4 gap-[10px] items-start py-4">
+                    <!-- Titulo -->
+                    <h5 class="text-xl font-semibold text-primaryColor text-start">Lorem Ipsum es simplemente el texto
+                      de relleno de las imprentas y archivos de texto.</h5>
+                    <!-- Detalles -->
+                    <section class="flex flex-col text-start gap-[8px]">
+                      <!-- FECHA -->
+                      <span class="flex items-center gap-[15px]"><i
+                          class="fa-regular fa-calendar text-[23px] text-primaryColor"></i>Sábado 26 / Octubre
+                        2024</span>
+                      <!-- HORA -->
+                      <span class="flex items-center gap-[15px]"><i
+                          class="fa-regular fa-clock text-[23px] text-primaryColor"></i>14:00 h</span>
+                      <!-- DIRECCIÓN -->
+                      <span class="flex items-center gap-[15px]"><i
+                          class="fa-solid fa-location-dot text-[23px] text-primaryColor"></i>Carrera 63A 34-36</span>
+                    </section>
+                    <!-- Botón -->
+                    <a class="inline-block px-[25px] py-2 bg-primaryColor text-white rounded-full mt-4" href="#">Más
+                      información</a>
+                  </section>
+                </article>
+              </li>
 
+            </ul>
+          </div>
+          <!-- Flechas de navegación -->
+          <article
+            class="absolute inset-0 flex items-center justify-between  px-[30px] h-full w-full splide__arrows splide__arrows--ltr">
+            <button
+              class="splide__arrow splide__arrow--prev bg-secundaryColor text-black text-[25px] items-center font-bold border-[1px] h-[50px] w-[50px] rounded-full">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button
+              class="splide__arrow splide__arrow--next text-black bg-secundaryColor text-[25px] items-center font-bold border-[1px] h-[50px] w-[50px] rounded-full">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </article>
+        </div>
+
+
+      </section>
       <!--TODO Próximos Eventos -->
       <section class="flex flex-col gap-[10px] px-[40px] mt-8">
         <h4 class="text-2xl font-bold text-primaryColor mb-4">PRÓXIMOS EVENTOS</h4>
         <!--! Cards de Sliders -->
-        <article class="flex items-center border-[2px] border-black rounded-xl shadow-md p-[10px] gap-[30px]">
-          <!-- Imagen Evento -->
-          <figure class="w-[40%] h-[300px]">
-            <img class="w-full h-full object-cover rounded-lg" src="./assets/img/SliderEventos2.png"
-              alt="Próximo Evento">
-          </figure>
-          <!-- Detalles Evento -->
-          <section class="flex flex-col w-2/4 gap-[10px] items-start py-4">
-            <!-- Titulo -->
-            <h5 class="text-xl font-semibold text-primaryColor text-start">Lorem Ipsum es simplemente el texto de
-              relleno de las imprentas y archivos de texto.</h5>
-            <!-- Detalles -->
-            <section class="flex flex-col text-start gap-[8px]">
-              <!-- FECHA -->
-              <span class="flex items-center gap-[15px]"><i
-                  class="fa-regular fa-calendar text-[23px] text-primaryColor"></i>Sábado 26 / Octubre 2024</span>
-              <!-- HORA -->
-              <span class="flex items-center gap-[15px]"><i
-                  class="fa-regular fa-clock text-[23px] text-primaryColor"></i>14:00 h</span>
-              <!-- DIRECCIÓN -->
-              <span class="flex items-center gap-[15px]"><i
-                  class="fa-solid fa-location-dot text-[23px] text-primaryColor"></i>Carrera 63A 34-36</span>
-            </section>
-            <!-- Botón -->
-            <a class="inline-block px-[25px] py-2 bg-primaryColor text-white rounded-full mt-4" href="#">Más
-              información</a>
-          </section>
-        </article>
-      </section>
+        <div id="next-event-slider" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <article
+                  class="flex flex-col md:flex-row items-center border-[2px] border-black rounded-xl shadow-md p-[10px] gap-[30px]">
+                  <!-- Imagen Evento -->
+                  <figure class="w-full md:w-[40%] h-[300px]">
+                    <img class="w-full h-full object-cover rounded-lg" src="./assets/img/SliderEventos2.png"
+                      alt="Próximo Evento">
+                  </figure>
+                  <!-- Detalles Evento -->
+                  <section class="flex flex-col w-full md:w-2/4 gap-[10px] items-start py-4">
+                    <!-- Titulo -->
+                    <h5 class="text-xl font-semibold text-primaryColor text-start">Lorem Ipsum es simplemente el texto
+                      de relleno de las imprentas y archivos de texto.</h5>
+                    <!-- Detalles -->
+                    <section class="flex flex-col text-start gap-[8px]">
+                      <!-- FECHA -->
+                      <span class="flex items-center gap-[15px]"><i
+                          class="fa-regular fa-calendar text-[23px] text-primaryColor"></i>Sábado 26 / Octubre
+                        2024</span>
+                      <!-- HORA -->
+                      <span class="flex items-center gap-[15px]"><i
+                          class="fa-regular fa-clock text-[23px] text-primaryColor"></i>14:00 h</span>
+                      <!-- DIRECCIÓN -->
+                      <span class="flex items-center gap-[15px]"><i
+                          class="fa-solid fa-location-dot text-[23px] text-primaryColor"></i>Carrera 63A 34-36</span>
+                    </section>
+                    <!-- Botón -->
+                    <a class="inline-block px-[25px] py-2 bg-primaryColor text-white rounded-full mt-4" href="#">Más
+                      información</a>
+                  </section>
+                </article>
+              </li>
+              <li class="splide__slide">
+                <article
+                  class="flex flex-col md:flex-row items-center border-[2px] border-black rounded-xl shadow-md p-[10px] gap-[30px]">
+                  <!-- Imagen Evento -->
+                  <figure class="w-full md:w-[40%] h-[300px]">
+                    <img class="w-full h-full object-cover rounded-lg" src="./assets/img/SliderEventos2.png"
+                      alt="Próximo Evento">
+                  </figure>
+                  <!-- Detalles Evento -->
+                  <section class="flex flex-col w-full md:w-2/4 gap-[10px] items-start py-4">
+                    <!-- Titulo -->
+                    <h5 class="text-xl font-semibold text-primaryColor text-start">Lorem Ipsum es simplemente el texto
+                      de relleno de las imprentas y archivos de texto.</h5>
+                    <!-- Detalles -->
+                    <section class="flex flex-col text-start gap-[8px]">
+                      <!-- FECHA -->
+                      <span class="flex items-center gap-[15px]"><i
+                          class="fa-regular fa-calendar text-[23px] text-primaryColor"></i>Sábado 26 / Octubre
+                        2024</span>
+                      <!-- HORA -->
+                      <span class="flex items-center gap-[15px]"><i
+                          class="fa-regular fa-clock text-[23px] text-primaryColor"></i>14:00 h</span>
+                      <!-- DIRECCIÓN -->
+                      <span class="flex items-center gap-[15px]"><i
+                          class="fa-solid fa-location-dot text-[23px] text-primaryColor"></i>Carrera 63A 34-36</span>
+                    </section>
+                    <!-- Botón -->
+                    <a class="inline-block px-[25px] py-2 bg-primaryColor text-white rounded-full mt-4" href="#">Más
+                      información</a>
+                  </section>
+                </article>
+              </li>
 
+
+            </ul>
+          </div>
+          <!-- Flechas de navegación -->
+          <article
+            class="absolute inset-0 flex items-center justify-between px-[20px] h-full w-full splide__arrows splide__arrows--ltr">
+            <button
+              class="splide__arrow splide__arrow--prev text-black bg-secundaryColor text-[25px] items-center font-bold border-[1px] h-[50px] w-[50px] rounded-full">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button
+              class="splide__arrow splide__arrow--next text-black bg-secundaryColor text-[25px] items-center font-bold border-[1px] h-[50px] w-[50px] rounded-full">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </article>
+        </div>
+      </section>
     </section>
     <!-- *°Eventos °* -->
 
@@ -614,15 +731,19 @@
         <ul class="splide__pagination flex justify-center mt-4 relative"></ul>
       </section>
       <!-- *°Slder Solidaridad e Igualdad°* -->
+
+
+      <!-- *°Noticia Destacada°* -->
       <section class="container mx-auto flex flex-col gap-[20px]">
         <!-- *°Contenedor Titulo°* -->
         <section class="w-full bg-white text-primaryColor p-[12px] text-center">
           <h3 class="text-[25px]">NOTICIA DESTACADA</h3>
         </section>
         <!-- *°Noticia°* -->
-        <article class="w-full flex bg-white rounded-lg shadow-lg mx-auto p-6 gap-6 items-start h-[400px]">
+        <article
+          class="w-full flex flex-wrap bg-white rounded-lg shadow-lg mx-auto p-6 gap-6 items-start h-auto md:h-[400px]">
           <!-- Contenido de texto -->
-          <div class="w-2/3 flex flex-col gap-4 h-full">
+          <div class="w-full md:w-2/3 flex flex-col gap-4 h-full">
             <div class="flex flex-col gap-2 flex-grow" style="flex-basis: 20%;">
               <h2 class="text-2xl font-semibold text-primaryColor">
                 Nueva Ley de Protección Integral para Mujeres Aprobada: Un Gran Paso Hacia la Igualdad de Género
@@ -653,7 +774,7 @@
             </div>
           </div>
           <!-- Imagen -->
-          <div class="w-[400px] h-full flex-shrink-0">
+          <div class="w-full md:w-[400px] h-[300px] md:h-full flex-shrink-0">
             <img src="./assets/img/NoticiaPrincipal.png" alt="Mujer con laptop en el sofá"
               class="rounded-lg object-cover w-full h-full">
           </div>
