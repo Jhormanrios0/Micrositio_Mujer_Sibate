@@ -26,7 +26,6 @@ var splideImageSlider = new Splide("#image-slider", {
 });
 splideImageSlider.mount();
 
-
 var splideEventSlider = new Splide("#event-slider", {
   classes: {
     arrows:
@@ -45,7 +44,8 @@ splideEventSlider.mount();
 
 var splideNextEventSlider = new Splide("#next-event-slider", {
   classes: {
-    arrows: "splide__arrows absolute inset-0 flex items-center justify-between px-[20px]",
+    arrows:
+      "splide__arrows absolute inset-0 flex items-center justify-between px-[20px]",
     arrow: "bg-primaryColor text-white rounded-full p-2",
     prev: "splide__arrow--prev",
     next: "splide__arrow--next",
@@ -106,4 +106,26 @@ window.addEventListener("click", (event) => {
   if (event.target === dateModal) {
     closeDateModal();
   }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdowns = document.querySelectorAll(".dropdown");
+
+  dropdowns.forEach((dropdown) => {
+    dropdown.addEventListener("mouseenter", function () {
+      const submenu = this.querySelector("ul");
+      submenu.classList.remove("hidden");
+      submenu.classList.add("flex");
+      submenu.style.opacity = "1";
+      submenu.style.transform = "translateY(0)";
+    });
+
+    dropdown.addEventListener("mouseleave", function () {
+      const submenu = this.querySelector("ul");
+      submenu.classList.remove("flex");
+      submenu.classList.add("hidden");
+      submenu.style.opacity = "0";
+      submenu.style.transform = "translateY(-10px)";
+    });
+  });
 });

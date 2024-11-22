@@ -1,4 +1,4 @@
-//Configuración de colores generales
+//ConfiguraciÃ³n de colores generales
 
 tailwind.config = {
   theme: {

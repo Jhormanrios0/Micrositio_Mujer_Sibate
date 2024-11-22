@@ -2,7 +2,7 @@
 
 :root {
   --textcolor: #000;
-  --mainColor: #1d529e;
+  --mainColor: #7063ac;
 }
 
 * {
@@ -26,7 +26,6 @@
 .header .menu .head {
   display: none;
 }
-
 .header .menu ul {
   list-style: none;
   display: flex;
@@ -36,12 +35,58 @@
 .header .menu > ul > li {
   display: flex;
   align-items: center;
+  position: relative; /* Necesario para el submenú */
 }
+
 .header .menu > ul > li a {
   font-weight: 600;
   font-size: 14px;
+  text-align: center;
 }
 
+.header .menu .dropdown section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .menu .dropdown ul {
+  display: none;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.header .menu .dropdown:hover ul,
+.header .menu .dropdown:focus-within ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  z-index: 10;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.header .menu .dropdown ul li {
+  width: 100%;
+}
+
+.header .menu .dropdown ul li a {
+  padding: 0.5rem 1rem;
+  display: block;
+  width: 100%;
+  color: black;
+  text-align: left;
+}
+
+.header .menu .dropdown ul li a:hover {
+  background-color: #f0f0f0;
+}
 .header .menu .dropdown {
   position: relative;
 }
@@ -56,6 +101,7 @@
 
 .header .menu .dropdown section:hover {
   background: var(--mainColor);
+  border-radius: 10px;
   color: white;
 }
 
